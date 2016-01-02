@@ -7,3 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+
+#import "LocationController.h"
+#import "Location.h"
+
+@implementation LocationController
+
+- (Location*)getMapLocation
+{
+    
+    Location* poi = [[Location alloc]init];
+    poi.mapImage = @"map.jpg";
+    poi.locationName = @"Prudential Center, Boston";
+    poi.latitude = 42.347111;
+    poi.longitude = -71.081715;
+    return poi;
+}
+
+@end
