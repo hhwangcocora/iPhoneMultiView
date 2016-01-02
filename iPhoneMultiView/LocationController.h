@@ -6,8 +6,12 @@
 //  Copyright © 2016 Huihong Wang. All rights reserved.
 //
 
-#ifndef LocationController_h
-#define LocationController_h
+#import <Foundation/Foundation.h>
 
+#import "Location.h"
 
-#endif /* LocationController_h */
+@interface LocationController : NSObject
+
+- (Location*)getMapLocation;
+
+@end
